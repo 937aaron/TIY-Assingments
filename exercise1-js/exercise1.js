@@ -75,7 +75,16 @@ comic.unshift("Spiderman","Punisher")
 
 // .filter()
 filter tests an array by seeing if the return value is true
-
-
+function rentToDangHigh(value) {
+  return value >= 1000;
+}
+var filt=[800,1200,999,1000].filter(rentToDangHigh);
+> [1200, 1000]
 // .map()
 map creates an array that is the result of a function
+var num= [2,4,6]
+var plusOne= num.map(function(num){
+  return num + 1;
+});
+console.log(plusOne);
+> [3,4,6]
