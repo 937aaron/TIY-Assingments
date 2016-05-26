@@ -24,7 +24,7 @@ var food = document.querySelector("#food");
 var redList = document.querySelectorAll("li");
 for (var i = 0; i < redList.length; i++) {
   redList[i].style.color = "red";
-  redList[i].className ="listClass";
+  redList[i].className ="listitem";
 };
 //listClass.style.color="red";
 
