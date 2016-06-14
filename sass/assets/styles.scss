@@ -1,0 +1,144 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+// end of Reset!
+
+$backColor: #fdfdfd;
+$hlGreen: #9eb5a8;
+$hlGrey: #cedad9;
+$darkGreen: #9eb5b3;
+$tabsFont: 1.25em;
+$font: Helvetica, serif;
+
+body {
+	background-color: $backColor;
+}
+.bumper {
+	// text-align: center;
+	width: 100%;
+	background-color: $hlGrey;
+	height: 4.5em;
+}
+p {
+	text-align: center;
+	color: $darkGreen;
+	font: {
+		size: 1.80em;
+		family: $font;
+	}
+}
+.navBar {
+	width: 100%;
+	background-color: $hlGreen;
+	height: 3.2em;
+	font: {
+		family: $font;
+		size: $tabsFont;}
+
+		.homeButton {
+			display: inline-block;
+			width: 8%;
+			margin-left: 15%;
+			padding-left: 5px;
+			border-right: .7px solid white;
+			&:hover{background-color: $hlGrey;
+							border-color: $hlGrey;
+			}
+}
+		.aboutButton {
+			display: inline-block;
+			width: 8%;
+			padding-left:1.05em;
+			margin-left: -6px;
+			border-right: .7px solid white;
+			&:hover{background-color: $hlGrey;
+							border-color: $hlGrey;
+			}
+		}
+}
+.wrapper{
+	margin-left:auto;
+	margin-right: auto;
+	// border: 1px solid black;
+	width: 70%;
+	height: 500px;
+	.wideContent {
+		// border: 1px solid black;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		text-align: left;
+		//margin-left: 100px;
+		width: 90%;
+		height: 130px;
+		font-size: .75em;
+		padding-left: .5em;
+	}
+// .skinnyWrapper {
+// 	//position: absolute;
+// 	margin-left: auto;
+// 	margin-right: auto;
+// 	width: 95%;
+// 	height: 135px;
+// 	border: 1px solid blue;
+	.skinnyContent {
+		display: inline-block;
+		margin-top: 2em;
+		padding: 12px 2px 12px 2px;
+		// position: absolute;
+		//justify-content: flex-end;
+		margin-left: auto;
+		margin-right: auto;
+
+		border: 1px solid #f2f2f2;
+		width: 49%;
+		height: 130px;
+		font-size: .75em;
+		}
+	}
+// }
